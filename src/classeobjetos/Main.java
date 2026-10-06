@@ -7,6 +7,14 @@ public class Main {
     // Estado = valores atuais dos atributos de um objeto.
     // Método de instância = comportamento executado por um objeto específico.
 
+    //static → pertence à classe
+    //sem static → pertence às instâncias da classe
+
+    //Método de instância
+    //É um método que pertence aos objetos criados a partir de uma classe.
+    // Ele pode acessar e usar diretamente os atributos daquela instância.
+
+
     public static void main(String[] args) {
 
         /*Pessoa pessoa1 = new Pessoa();
@@ -35,12 +43,15 @@ public class Main {
         carro1.acelerar();
         carro2.acelerar();
 
-        //static → pertence à classe
-        //sem static → pertence às instâncias da classe
+        System.out.println(carro1.getMarca());
+        System.out.println(carro1.getModelo());
+        System.out.println(carro1.getAno());
 
-        //Método de instância
-        //É um método que pertence aos objetos criados a partir de uma classe.
-        // Ele pode acessar e usar diretamente os atributos daquela instância.
+        carro1.setModelo("Yaris");
+        carro1.setAno(-10);
+
+        System.out.println(carro1.getModelo());
+        System.out.println(carro1.getAno());
 
     }
 }
