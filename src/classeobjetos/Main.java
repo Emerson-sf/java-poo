@@ -6,12 +6,11 @@ public class Main {
 
         //Herança --
 
-        Carro carro1 = new Carro("Toyota", 4);
+        /** Carro carro1 = new Carro("Toyota", 4);
         Moto moto1 = new Moto("Honda", 500);
 
         System.out.println(carro1.getMarca());
         carro1.acelerar();
-
         System.out.println(moto1.getMarca());
         moto1.acelerar();
 
@@ -20,7 +19,25 @@ public class Main {
 
         veiculo1.acelerar();
         veiculo2.acelerar();
+         **/
 
+        Veiculos[] veiculos = {
+                new Carro("Toyota", 4),
+                new Moto("Honda", 500),
+                new Carro("Ford", 2),
+                new Moto("Yamaha", 300)
+        };
+
+        for (Veiculos veiculo : veiculos) {
+            veiculo.acelerar();
+
+            if(veiculo instanceof Moto moto){
+                moto.empinar();
+            }
+            else if (veiculo instanceof Carro carro){
+                carro.abrirPortaMalas();
+            }
+        }
     }
 }
 

@@ -3,7 +3,6 @@ package classeobjetos;
 //classe
 public class Carro extends Veiculos {
 
-    private String marca;
     private String modelo;
     private int ano;
     private int portas;
@@ -14,17 +13,12 @@ public class Carro extends Veiculos {
         this.portas = portas;
     }
 
-    /**encapsulamento-
+    /** encapsulamento -
 
-    public String getMarca(){
-        return marca;
-    }
-    public String getModelo(){
-        return modelo;
-    }
-    public int getAno(){
-        return ano;
-    }
+    public String getMarca() {return marca; }
+    public String getModelo() {return modelo; }
+    public int getAno() {return ano; }
+
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
@@ -34,12 +28,22 @@ public class Carro extends Veiculos {
         }
     }*/
 
-    void exibirInformacoes() {
-        System.out.println("-------\nMarca: " + marca + "\nModelo: " + modelo + "\nAno: " + ano);
+    public void exibirInformacoes() {
+        System.out.println("-------\nMarca: " + getMarca() + "\nModelo: " + modelo + "\nAno: " + ano);
+
     }
 
     @Override
     public void acelerar(){
         System.out.println("Carro acelerando");
+    }
+
+    @Override
+    public void buzinar() {
+        System.out.println("BEEP BEEP");
+    }
+
+    public void abrirPortaMalas() {
+        System.out.println("Porta-malas aberto");
     }
 }

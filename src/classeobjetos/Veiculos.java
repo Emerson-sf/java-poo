@@ -15,6 +15,10 @@ public class Veiculos {
     public void acelerar(){
         System.out.println("Veiculo acelerando");
     }
+
+    public void buzinar() {
+        System.out.println("Veículo buzinando");
+    }
 }
 
 

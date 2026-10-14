@@ -9,7 +9,7 @@ public class Moto extends Veiculos {
         this.cilindradas = cilindradas;
     }
 
-    void empinar(){
+    public void empinar(){
         System.out.println("A moto está empinando");
     }
 
@@ -17,5 +17,10 @@ public class Moto extends Veiculos {
     @Override
     public void acelerar(){
         System.out.println("A moto está acelerando");
+    }
+
+    @Override
+    public void buzinar() {
+        System.out.println("BIP BIP");
     }
 }
