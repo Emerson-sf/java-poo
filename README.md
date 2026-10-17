@@ -9,5 +9,9 @@ Repositório dedicado aos meus estudos de Programação Orientada a Objetos (POO
 - Construtores
 - Encapsulamento
 - Getters e setters
+- Herança
+- Polimorfismo
+- Abstração e Interfaces
+- Collections e Exceptions
   
 Os exercícios estão organizados na pasta `src`, e serão atualizados conforme meu progresso nos estudos.
