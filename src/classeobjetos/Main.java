@@ -21,6 +21,9 @@ public class Main {
         veiculo2.acelerar();
          **/
 
+        //Polimorfismo --
+
+        /**
         Veiculos[] veiculos = {
                 new Carro("Toyota", 4),
                 new Moto("Honda", 500),
@@ -37,7 +40,24 @@ public class Main {
             else if (veiculo instanceof Carro carro){
                 carro.abrirPortaMalas();
             }
-        }
+        } */
+
+        /**
+        Veiculos v1 = new Carro("Toyota", 4);
+        Veiculos v2 = new Moto("Honda", 500);
+
+        v1.acelerar();
+        v1.desligar();
+
+        v2.acelerar();
+        v2.desligar();
+         */
+
+        Carro carro = new Carro("Toyota", 4);
+
+        carro.ligar();
+        carro.acelerar();
+        carro.desligar();
     }
 }
 

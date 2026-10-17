@@ -1,12 +1,11 @@
 package classeobjetos;
 
 //classe
-public class Carro extends Veiculos {
+public class Carro extends Veiculos implements Ligavel {
 
     private String modelo;
     private int ano;
     private int portas;
-
 
     public Carro(String marca, int portas){
         super(marca);
@@ -30,7 +29,6 @@ public class Carro extends Veiculos {
 
     public void exibirInformacoes() {
         System.out.println("-------\nMarca: " + getMarca() + "\nModelo: " + modelo + "\nAno: " + ano);
-
     }
 
     @Override
@@ -45,5 +43,10 @@ public class Carro extends Veiculos {
 
     public void abrirPortaMalas() {
         System.out.println("Porta-malas aberto");
+    }
+
+    @Override
+    public void ligar(){
+        System.out.println("Carro ligado");
     }
 }

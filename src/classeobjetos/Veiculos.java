@@ -1,24 +1,28 @@
 package classeobjetos;
 
-public class Veiculos {
+public abstract class Veiculos {
 
     private String marca;
 
-    public Veiculos(String marca){
+    public Veiculos(String marca) {
         this.marca = marca;
     }
 
-    public String getMarca(){
+    public String getMarca() {
         return marca;
     }
 
-    public void acelerar(){
-        System.out.println("Veiculo acelerando");
-    }
+    public abstract void acelerar();
 
     public void buzinar() {
         System.out.println("Veículo buzinando");
     }
+
+    public void desligar() {
+        System.out.println("Veiculo desligado");
+    }
+
 }
+
 
 
